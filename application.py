@@ -4,7 +4,8 @@ import numpy as np
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 
-app = Flask(__name__)
+application = Flask(__name__)
+app=application
 
 scaler=pickle.load(open('models/scaler.pkl','rb'))
 ridge=pickle.load(open('models/ridge.pkl','rb'))
